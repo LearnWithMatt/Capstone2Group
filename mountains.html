@@ -1,18 +1,115 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap demo</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/site.css">
 
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>mountains page</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,700&family=Poppins:ital,wght@0,700;1,700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="../css/mountain.css">
+  <link rel="stylesheet" href="css/site.css">
 </head>
-  <body>
-    <h1>Capstone 2 placeholder</h1>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos ducimus rerum delectus laboriosam? Rem quam explicabo accusantium! Quae ullam aperiam sunt enim vitae voluptatem, iste alias totam ad voluptatum mollitia.</p>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
-  </body>
+
+<body>
+
+
+  <main>
+
+    <div id="bg-image" class="bg-image"> </div>
+
+
+    <header>
+
+      <nav class="navbar  navbar-expand-md  navbar-scroll  ">
+        <div class="container-fluid  ">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto">
+              <li class="nav-item ">
+                <a class="nav-link r" href="index.html">
+                  <h5>Home</h5>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " href="parks.html">
+                  <h5>National Parks</h5>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link align-content-center" href="mountains.html">
+                  <h5>Mountains</h5>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+    </header>
+
+    <section class="select">
+
+
+      <select id="mountainsList" class="form-select form-select-lg mb-3 text-bg-dark opacity-75 "></select>
+
+      <h5 class="container w-50">
+        <p id="mountainDescriptions"></p>
+      </h5>
+
+      <div id="myDiv" class="myDiv p-3">
+
+      </div>
+
+    </section>
+
+    <section class="jumboTron p-5 m-5">
+
+      <div class="row align-items-md-stretch">
+        <div class="col-md-8">
+          <div class="h-100 p-5 text-bg-dark rounded-3 opacity-75">
+            <h2>Explore Mountains</h2>
+            <p>From North America’s tallest peak, Denali, in Denali National Park, to the rolling hills of the
+              Appalachians seen along the Blue Ridge Parkway, the National Park Service preserves and interprets some of
+              the nation’s most scenic mountainous landscapes and the human stories contained within. We invite you to
+              find and explore the mountain parks that inspire you.</p>
+            <a href="explore.html" class="btn btn-outline-danger" type="button">Explore more..</a>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="h-100 p-3 bg-light border rounded-3 opacity-75">
+            <h2>Tours</h2>
+            <p>Outdoors website helps adventure-seekers plan and book travel to some of the most popular mountain
+              destinations around the US. We specialise in connecting travellers with the best local guides in each
+              destination.</p>
+            <a href="#" class="btn btn-outline-danger" type="button">Explore more..</a>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+
+  </main>
+
+
+  <script src="../scripts/mountains.js"></script>
+  <script src="../scripts/mountainData.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+    crossorigin="anonymous"></script>
+
+</body>
+
 </html>
-
